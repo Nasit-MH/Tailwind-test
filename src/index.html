@@ -8,11 +8,570 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">\
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <title>Tailwind test Project</title>
 </head>
 <body>
-    
+  <!-- full body sec - start -->
+    <div class="bg-[#F1F5FA] ">
+    <!-- nav sec - start -->
+      <div class="flex justify-between gap-2 items-center md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7">
+        <div class="bg-white py-5 lg:px-7 px-4 rounded-b-[20px] shadow-lg">
+          <ul class="flex gap-6 items-center">
+            <li>
+              <div class="relative group">
+                <a class="text-lg" href="">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="bg-white p-6 rounded-[20px] absolute top-[60px] left-[-28px] z-[20] w-[295px] hidden group-hover:block">
+                  <p class="text-sm text-black Outfit font-medium">Phone:</p>
+                  <a class="text-md text-gray-600 block"href="">+123 456 789 01</a>
+                  <a class="text-md text-gray-600" href="">+123 456 789 01</a>
+                  <p class="text-sm text-black Outfit font-medium pt-4">Email:</p>
+                  <p class="text-md text-gray-600">contact@flatheme.net</p>
+                  <ul class="flex items-center gap-1 mt-4">
+                    <li>
+                      <a class="text-md" href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                About
+              </a>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                Services
+              </a>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                Portfolio
+              </a>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                Resume
+              </a>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                Contact
+              </a>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                Blog
+              </a>
+            </li>
+            <li class="lg:block hidden">
+              <a class="uppercase text-[#2c3943] font-medium text-sm tracking-wide Outfit relative before:content-[''] before:absolute before:left-0 before:w-0 before:h-[1px] before:bottom-[-1px] before:bg-black duration-75 before:hover:w-full before:duration-75 before:right-0 " href="#">
+                Dark Version
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="uppercase text-[#2c3943] text-3xl font-semibold Outfit tracking-wider" href="">Nemu</a>
+      </div>
+    <!-- nav sec - end -->
+
+    <div class="flex md:flex-nowrap flex-wrap justify-between gap-2 items-center md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7 mt-16">
+      <div class="md:w-[65%] w-full ">
+        <h1 class="xl:text-6xl sm:text-[43px] text-[30px] font-medium Outfit leading-[1.2] text-[#2c3943]">Hi There! I'm Chrisy. A Professional Digital Marketer based in Mongolia</h1>
+        <div class="inline-flex items-center bg-white/30 px-6 py-3 rounded-full border  border-dashed border-gray-300   dark:text-white/80 mt-6">
+          <span class="relative inline-block w-2 h-2 bg-green-400 rounded-full me-3 before:content-[''] before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:bg-green-400 before:rounded-full before:animate-hireDot">
+          </span>
+          <span class="text-[#2c3943] !text-[16px] sm:text-sm">Available for hire</span>
+        </div>
+      </div>
+      <div class="md:w-2/6 xl:w-1/4 md:ml-6 lg:ml-8 xl:ml-10 text-right  w-full md:mt-0 mt-8">
+        <div class="relative inline-block max-w-[480px] md:max-w-[270px] before:content-[''] before:z-[1] before:absolute before:-top-4 before:right-4 before:-bottom-4 before:-left-4 before:bg-white/30 before:border-red before:border  before:border-dashed before:rounded-tl-[50%] before:rounded-bl-[50%] ">
+          <img class="h-auto w-full rounded-l-[50%] z-[1]" src="../img/avatar.jpg" alt="img">
+          <ul class=" flex gap-1 absolute bottom-[23px] left-[8px]">
+            <li class="inline-block">
+              <a class="inline-flex justify-center items-center text-md  w-11 h-11 bg-black  rounded-full hover:bg-slate-500 backdrop-blur-[5px] text-white transition ease-linear duration-75 " href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            </li>
+            <li class="inline-block">
+              <a class="inline-flex justify-center items-center text-lg w-11 h-11 bg-black  rounded-full backdrop-blur-[5px] text-white transition ease-linear duration-75 hover:bg-slate-500 " href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </li>
+            <li class="inline-block">
+              <a class="inline-flex justify-center items-center text-lg w-11 h-11 bg-black  rounded-full backdrop-blur-[5px] text-white transition ease-linear duration-75 hover:bg-slate-500 " href=""><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- card sec - start -->
+    <div class="md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7 mt-24">
+      <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
+        <div class="bg-white xl:p-12 sm:p-10 p-8 relative rounded-[25px] shadow-lg">
+          <p class="text-4xl"><i class="fa-solid fa-earth-americas" style="color: #c0c0c0;"></i></p>
+          <h5 class="Outfit font-medium  text-xl text-[#2c3943] mt-12">Creating marketing strategies, and campaigns</h5>
+          <a class="absolute inline-flex justify-center items-center right-0 bottom-0  w-[50px] h-[50px] rounded-tl-[50%] rounded-br-[50%] bg-[#2c3943] hover:bg-black " href="">
+            <i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i>
+          </a>
+        </div>
+        <div class="bg-white xl:p-12 sm:p-10 p-8 relative rounded-[25px] shadow-lg">
+          <p class="text-4xl"><i class="fa-solid fa-wifi" style="color: #c0c0c0;"></i></p>
+          <h5 class="Outfit font-medium  text-xl text-[#2c3943] mt-12">Creating marketing strategies, and campaigns</h5>
+          <a class="absolute inline-flex justify-center items-center right-0 bottom-0  w-[50px] h-[50px] rounded-tl-[50%] rounded-br-[50%] bg-[#2c3943] hover:bg-black " href="">
+            <i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i>
+          </a>
+        </div>
+        <div class="bg-[#9c7ece] xl:p-12 sm:p-10 p-8  rounded-[25px] shadow-lg">
+          <h1 class="text-white font-bold sm:text-7xl text-6xl pb-5">4,000+</h1>
+          <p class="Open text-md text-white">Satisfied customers around the world during the past 10 years</p>
+        </div>
+      </div>
+    </div>
+    <!-- card sec - End -->
+
+    <div class="flex lg:flex-nowrap flex-wrap justify-between gap-2 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7 mt-16">
+      <div class="xl:w-[20%] w-full xl:text-center text-left">
+        <h1 class="text-black font-medium text-7xl Outfit">10+</h1>
+        <p class="pt-3 Outfit text-gray-600">Years of Experience</p>
+      </div>
+      <div class="xl:w-[80%] w-full xl:mt-0 mt-6">
+        <h2 class="font-medium sm:text-4xl text-2xl Outfit text-[#2c3943]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h2>
+      </div>
+    </div>
+
+    <div class="md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7 mt-16 flex xl:flex-nowrap flex-wrap justify-between gap-4 ">
+        <div class="xl:w-[56%] w-full grid md:grid-cols-3 grid-cols-2 gap-4">
+          <div class="bg-white/30 p-6 md:p-7   border  border-dashed rounded-3xl dark:bg-charcoal/30 border-gray-400">
+            <a class="opacity-50 transition ease-out duration-[120ms] hover:opacity-100" href="">
+              <img class="inline-block" src="../img/client-1-dark.png" alt="img">
+            </a>
+          </div>
+          <div class="bg-white/30 p-6 md:p-7   border  border-dashed rounded-3xl dark:bg-charcoal/30 border-gray-400">
+            <a class="opacity-50 transition ease-out duration-[120ms] hover:opacity-100" href="">
+              <img class="inline-block" src="../img/client-1-dark.png" alt="img">
+            </a>
+          </div>
+          <div class="bg-white/30 p-6 md:p-7   border  border-dashed rounded-3xl dark:bg-charcoal/30 border-gray-400">
+            <a class="opacity-50 transition ease-out duration-[120ms] hover:opacity-100" href="">
+              <img class="inline-block" src="../img/client-1-dark.png" alt="img">
+            </a>
+          </div>
+          <div class="bg-white/30 p-6 md:p-7   border  border-dashed rounded-3xl dark:bg-charcoal/30 border-gray-400">
+            <a class="opacity-50 transition ease-out duration-[120ms] hover:opacity-100" href="">
+              <img class="inline-block" src="../img/client-1-dark.png" alt="img">
+            </a>
+          </div>
+          <div class="bg-white/30 p-6 md:p-7   border  border-dashed rounded-3xl dark:bg-charcoal/30 border-gray-400">
+            <a class="opacity-50 transition ease-out duration-[120ms] hover:opacity-100" href="">
+              <img class="inline-block" src="../img/client-1-dark.png" alt="img">
+            </a>
+          </div>
+          <div class="bg-white/30 p-6 md:p-7   border  border-dashed rounded-3xl dark:bg-charcoal/30 border-gray-400">
+            <a class="opacity-50 transition ease-out duration-[120ms] hover:opacity-100" href="">
+              <img class="inline-block" src="../img/client-1-dark.png" alt="img">
+            </a>
+          </div>
+        </div>
+        <div class="xl:w-[41%] w-full bg-white p-10 rounded-[25px]  shadow-xl xl:mt-0 mt-4 relative">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-white ">
+                  <ul class="flex">
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                  </ul>
+                  <p class="text-[#2c3943] text-md py-4 Open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                  <h5 class="text-[#2c3943] font-semibold Open text-xl">Timothy Patterson</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white ">
+                  <ul class="flex">
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                  </ul>
+                  <p class="text-[#2c3943] text-md py-4 Open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                  <h5 class="text-[#2c3943] font-semibold Open text-xl">Timothy Patterson</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white ">
+                  <ul class="flex">
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                  </ul>
+                  <p class="text-[#2c3943] text-md py-4 Open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                  <h5 class="text-[#2c3943] font-semibold Open text-xl">Timothy Patterson</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white ">
+                  <ul class="flex">
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                    <li>
+                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
+                    </li>
+                  </ul>
+                  <p class="text-[#2c3943] text-md py-4 Open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                  <h5 class="text-[#2c3943] font-semibold Open text-xl">Timothy Patterson</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <a class="absolute inline-flex justify-center items-center right-0 bottom-0  w-[75px] h-[38px] rounded-tl-[50%] rounded-br-[50%] bg-[#2c3943] hover:bg-black " href="#">..</a>
+        </div>
+    </div>
+
+    <!-- my lates work -->
+    <div class="2xl:max-w-[1600px] w-[96%] rounded-[20px] mx-auto 2xl:px-28   py-16  px-8 bg-[#2c3943] mt-16">
+      <h2 class="lg:text-7xl sm:text-5xl text-4xl text-white font-bold Open mb-4 text-transparent 
+      [-webkit-text-stroke:2px_rgba(255,255,255,0.6)] tracking-wide">My Latest Works</h2>
+
+
+      <div class="swiper mylates_work mt-16 relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="inline-block  w-full">
+                  <a class="relative group block" href="">
+                    <div class="overflow-hidden rounded-lg group-hover:scale-[0.98] transition-all ease-custom duration-500">
+                      <img class="w-full" src="../img/portfolio-1.jpg" alt="img">
+                    </div>
+                    <div class="z-[2] absolute top-5 right-5 bg-gray-500 px-4 py-2 rounded-full backdrop-blur-[5px] Outfit font-medium uppercase text-sm text-white tracking-[1px] invisible opacity-0 transition-all ease-linear duration-100 group-hover:visible group-hover:opacity-100">
+                      Marketing
+                    </div>
+                    <div class="z-[1] absolute right-5 bottom-5 left-5 opacity-50 transition ease-linear duration-75 group-hover:opacity-100">
+                      <h2 class="Outfit font-semibold text-3xl text-white ">3d Printed Cup</h2>
+                    </div>
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inline-block  w-full">
+                  <a class="relative group block" href="">
+                    <div class="overflow-hidden rounded-lg group-hover:scale-[0.98] transition-all ease-custom duration-500">
+                      <img class="w-full" src="../img/portfolio-2.jpg" alt="img">
+                    </div>
+                    <div class="z-[2] absolute top-5 right-5 bg-gray-500 px-4 py-2 rounded-full backdrop-blur-[5px] Outfit font-medium uppercase text-sm text-white tracking-[1px] invisible opacity-0 transition-all ease-linear duration-100 group-hover:visible group-hover:opacity-100">
+                      Marketing
+                    </div>
+                    <div class="z-[1] absolute right-5 bottom-5 left-5 opacity-50 transition ease-linear duration-75 group-hover:opacity-100">
+                      <h2 class="Outfit font-semibold text-3xl text-white ">3d Printed Cup</h2>
+                    </div>
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inline-block  w-full">
+                  <a class="relative group block" href="">
+                    <div class="overflow-hidden rounded-lg group-hover:scale-[0.98] transition-all ease-custom duration-500">
+                      <img class="w-full" src="../img/portfolio-1.jpg" alt="img">
+                    </div>
+                    <div class="z-[2] absolute top-5 right-5 bg-gray-500 px-4 py-2 rounded-full backdrop-blur-[5px] Outfit font-medium uppercase text-sm text-white tracking-[1px] invisible opacity-0 transition-all ease-linear duration-100 group-hover:visible group-hover:opacity-100">
+                      Marketing
+                    </div>
+                    <div class="z-[1] absolute right-5 bottom-5 left-5 opacity-50 transition ease-linear duration-75 group-hover:opacity-100">
+                      <h2 class="Outfit font-semibold text-3xl text-white ">3d Printed Cup</h2>
+                    </div>
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inline-block  w-full">
+                  <a class="relative group block" href="">
+                    <div class="overflow-hidden rounded-lg group-hover:scale-[0.98] transition-all ease-custom duration-500">
+                      <img class="w-full" src="../img/portfolio-2.jpg" alt="img">
+                    </div>
+                    <div class="z-[2] absolute top-5 right-5 bg-gray-500 px-4 py-2 rounded-full backdrop-blur-[5px] Outfit font-medium uppercase text-sm text-white tracking-[1px] invisible opacity-0 transition-all ease-linear duration-100 group-hover:visible group-hover:opacity-100">
+                      Marketing
+                    </div>
+                    <div class="z-[1] absolute right-5 bottom-5 left-5 opacity-50 transition ease-linear duration-75 group-hover:opacity-100">
+                      <h2 class="Outfit font-semibold text-3xl text-white ">3d Printed Cup</h2>
+                    </div>
+                  </a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="swiper-button-next slider_right_arrow text-lg absolute top-0 right-0"></div>
+          <div class="swiper-button-prev slider_left_arrow"></div>
+      </div>
+
+    </div>
+
+    <!-- progress bar -->
+    <div class="md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7">
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 ">
+  <!-- Item -->
+        <div>
+          <div class="flex justify-between text-sm font-medium mb-2">
+            <span class="uppercase font-semibold">Progress Bar</span>
+            <span class="font-semibold">98%</span>
+          </div>
+          <div class="h-1 bg-gray-200 rounded-full">
+            <div class="h-1 bg-gray-900 rounded-full" style="width:98%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium mb-2">
+           <span class="uppercase font-semibold">Progress Bar</span>
+            <span class="font-semibold">85%</span>
+          </div>
+          <div class="h-1 bg-gray-200 rounded-full">
+            <div class="h-1 bg-gray-900 rounded-full" style="width:85%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium mb-2">
+            <span class="uppercase font-semibold">Progress Bar</span>
+            <span class="font-semibold">94%</span>
+          </div>
+          <div class="h-1 bg-gray-200 rounded-full">
+            <div class="h-1 bg-gray-900 rounded-full" style="width:94%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium mb-2">
+           <span class="uppercase font-semibold">Progress Bar</span>
+            <span class="font-semibold">98%</span>
+          </div>
+          <div class="h-1 bg-gray-200 rounded-full">
+            <div class="h-1 bg-gray-900 rounded-full" style="width:98%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium mb-2">
+            <span class="uppercase font-semibold">Progress Bar</span>
+            <span class="font-semibold">90%</span>
+          </div>
+          <div class="h-1 bg-gray-200 rounded-full">
+            <div class="h-1 bg-gray-900 rounded-full" style="width:90%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium mb-2">
+           <span class="uppercase font-semibold">Progress Bar</span>
+            <span class="font-semibold">80%</span>
+          </div>
+          <div class="h-1 bg-gray-200 rounded-full">
+            <div class="h-1 bg-gray-900 rounded-full" style="width:80%"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="space-y-10 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto px-7 mt-20">
+      <div class="w-full flex xl:flex-nowrap flex-wrap justify-between">
+        <div class="xl:w-[65%] w-full">
+          <div class="lg:flex gap-6 items-start">
+            <div  class="2xl:w-[22%] xl:w-[25%] lg:w-[20%] w-full">
+              <span class="px-6 py-3 text-sm uppercase font-semibold text-[#515456] tracking-widest border border-dashed rounded-full border-gray-400 bg-[#f4f6fb]">
+                2023 - Present
+              </span>
+            </div>
+
+            <div class="lg:w-[79%] w-full lg:mt-0 mt-6">
+              <h3 class="text-[#2c3943] font-semibold text-2xl Outfit">
+                Creative Director <span class="text-gray-400 italic">@flatheme</span>
+              </h3>
+              <p class=" text-lg text-gray-600 font-normal Outfit mt-2 max-w-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="lg:flex gap-6 items-start mt-7">
+            <div  class="2xl:w-[22%] xl:w-[25%] lg:w-[20%] w-full text-right">
+              <span class="px-6 py-3 text-sm uppercase font-semibold text-[#515456] tracking-widest border border-dashed rounded-full border-gray-400 bg-[#f4f6fb]">
+                2021 - 2023
+              </span>
+            </div>
+
+            <div class="lg:w-[79%] w-full lg:mt-0 mt-6">
+              <h3 class="text-[#2c3943] font-semibold text-2xl Outfit">
+                Creative Director <span class="text-gray-400 italic">@flatheme</span>
+              </h3>
+              <p class=" text-lg text-gray-600 font-normal Outfit mt-2 max-w-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="lg:flex gap-6 items-start mt-7">
+            <div  class="2xl:w-[22%] xl:w-[25%] lg:w-[20%] w-full text-right">
+              <span class="px-6 py-3 text-sm uppercase font-semibold text-[#515456] tracking-widest border border-dashed rounded-full border-gray-400 bg-[#f4f6fb]">
+                2018 - 2021
+              </span>
+            </div>
+
+            <div class="lg:w-[79%] w-full lg:mt-0 mt-6">
+              <h3 class="text-[#2c3943] font-semibold text-2xl Outfit">
+                Creative Director <span class="text-gray-400 italic">@flatheme</span>
+              </h3>
+              <p class=" text-lg text-gray-600 font-normal Outfit mt-2 max-w-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="lg:flex gap-6 items-start mt-7">
+            <div  class="2xl:w-[22%] xl:w-[25%] lg:w-[20%] w-full text-right">
+              <span class="px-6 py-3 text-sm uppercase font-semibold text-[#515456] tracking-widest border border-dashed rounded-full border-gray-400 bg-[#f4f6fb]">
+                2018 - 2021
+              </span>
+            </div>
+
+            <div class="lg:w-[79%] w-full lg:mt-0 mt-6">
+              <h3 class="text-[#2c3943] font-semibold text-2xl Outfit">
+                Creative Director <span class="text-gray-400 italic">@flatheme</span>
+              </h3>
+              <p class=" text-lg text-gray-600 font-normal Outfit mt-2 max-w-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="xl:w-[31%] grid xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-6 w-full xl:mt-0 mt-10">
+          <div class="bg-[#7e88ce] lg:p-16 p-10 rounded-[20px] w-full">
+              <p class="text-4xl"><i class="fa-solid fa-graduation-cap" style="color: #c0c0c0;"></i></p>
+              <h3 class="font-medium text-xl text-white mt-8 mb-1 Outfit">Business Administration</h3>
+              <p class="text-[#e5e7f5]">University of Business</p>
+          </div>
+          <div class="bg-[#7e88ce] lg:p-16 p-10 rounded-[20px]  w-full">
+              <p class="text-4xl"><i class="fa-solid fa-graduation-cap" style="color: #c0c0c0;"></i></p>
+              <h3 class="font-medium text-xl text-white mt-8 mb-1 Outfit">Business Administration</h3>
+              <p class="text-[#e5e7f5]">University of Business</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-4 grid-cols-2 gap-4 my-10">
+      <h2 class="Open font-semibold text-center text-5xl lg:text-6xl xl:text-7xl leading-tight md:leading-tight xl:leading-tight opacity-25" >Sliding Text 2</h2>
+      <h2 class="Open font-semibold text-center text-5xl lg:text-6xl xl:text-7xl leading-tight md:leading-tight xl:leading-tight opacity-25" >Sliding Text 2</h2>
+      <h2 class="Open font-semibold  text-5xl lg:text-6xl xl:text-7xl leading-tight md:leading-tight xl:leading-tight opacity-25 lg:block hidden" >Sliding Text 2</h2>
+      <h2 class="Open font-semibold  text-5xl md:text-6xl xl:text-7xl leading-tight md:leading-tight xl:leading-tight opacity-25 lg:block hidden" >Sliding Text 2</h2>
+    </div>
+
+    <div class="md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1320px] mx-auto bg-[#2c3943] rounded-t-[25px] sm:flex justify-between items-center sm:p-12 p-8 text-center">
+      <p class="text-[#d4d7d9] text-lg sm:mb-0 mb-6">© 2024 FlaTheme. All rights reserved.</p>
+      <a class="text-[#d4d7d9] text-lg " href="#">Scroll to Top</a>
+    </div>
+
+
+
+
+
+
+
+    </div>
+  <!-- full body sec - End -->
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+      },
+    });
+
+    var swiper = new Swiper(".mylates_work", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
+
+
 </body>
 </html>
