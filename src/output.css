@@ -566,3 +566,11 @@ video {
 .underline {
   text-decoration-line: underline;
 }
+
+.Outfit{
+  font-family: "Outfit", sans-serif;
+}
+
+.Open{
+  font-family: "Open Sans", sans-serif;
+}

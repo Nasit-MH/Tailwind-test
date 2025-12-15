@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.Outfit{
+    font-family: "Outfit", sans-serif;
+}
+
+.Open{
+    font-family: "Open Sans", sans-serif;
+}
