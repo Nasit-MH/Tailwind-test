@@ -109,7 +109,7 @@
               <a class="inline-flex justify-center items-center text-lg w-11 h-11 bg-[rgba(44,57,67,.4)]  rounded-full backdrop-blur-[5px] text-white transition ease-linear duration-75 hover:bg-[rgba(44,57,67,.3)] " href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
             </li>
             <li class="inline-block">
-              <a class="inline-flex justify-center items-center text-lg w-11 h-11 bg-[rgba(44,57,67,.4)]rounded-full backdrop-blur-[5px] text-white transition ease-linear duration-75 hover:bg-[rgba(44,57,67,.3)] " href=""><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+              <a class="inline-flex justify-center items-center text-lg w-11 h-11 bg-[rgba(44,57,67,.4)] rounded-full backdrop-blur-[5px] text-white transition ease-linear duration-75 hover:bg-[rgba(44,57,67,.3)] " href=""><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
             </li>
           </ul>
         </div>
@@ -186,7 +186,7 @@
           </div>
         </div>
         <div class="xl:w-[41%] w-full bg-white p-10 rounded-[25px]  shadow-xl xl:mt-0 mt-4 relative">
-          <div class="swiper mySwiper">
+          <div class="swiper myslider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="bg-white ">
@@ -257,43 +257,18 @@
                   <h5 class="text-[#2c3943] font-semibold Open text-xl">Timothy Patterson</h5>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="bg-white ">
-                  <ul class="flex">
-                    <li>
-                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
-                    </li>
-                    <li>
-                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
-                    </li>
-                    <li>
-                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
-                    </li>
-                    <li>
-                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
-                    </li>
-                    <li>
-                      <a class="text-md" href=""><i class="fa-solid fa-star" style="color: #ffff51;"></i></a>
-                    </li>
-                  </ul>
-                  <p class="text-[#2c3943] text-md py-4 Open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                  <h5 class="text-[#2c3943] font-semibold Open text-xl">Timothy Patterson</h5>
-                </div>
-              </div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
-          <a class="absolute inline-flex justify-center items-center right-0 bottom-0  w-[75px] h-[38px] rounded-tl-[50%] rounded-br-[50%] bg-[#2c3943] hover:bg-black " href="#">..</a>
+          <div class="swiper-pagination !text-right !bottom-0 absolute inline-flex justify-center items-center !right-0  !left-auto  !w-[75px] !h-[38px] rounded-tl-[50%] rounded-br-[41%] bg-[#2c3943] hover:bg-black "></div>
         </div>
     </div>
 
     <!-- my lates work -->
-    <div class="2xl:max-w-[1600px] w-[96%] rounded-[20px] mx-auto 2xl:px-28   py-16  px-8 bg-[#2c3943] mt-16">
+    <div class="2xl:max-w-[1600px] w-[96%] rounded-[20px] mx-auto 2xl:px-28   py-16  px-8 bg-[#2c3943] mt-16 relative">
       <h2 class="lg:text-7xl sm:text-5xl text-4xl  font-bold Open mb-4 text-transparent 
       [-webkit-text-stroke:2px_rgba(255,255,255,0.6)] tracking-wide">My Latest Works</h2>
 
-
-      <div class="swiper mylates_work mt-16 relative">
+      <div class="swiper mylates_work md:mt-16 mt-28 relative">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="inline-block  w-full">
@@ -355,12 +330,10 @@
                   </a>
               </div>
             </div>
-            
           </div>
-          <div class="swiper-button-next slider_right_arrow text-lg absolute top-0 right-0"></div>
-          <div class="swiper-button-prev slider_left_arrow"></div>
       </div>
-
+          <div class="swiper-button-next slider_right_arrow lg:!top-[102px] md:!top-[93px] sm:!top-[167px] !top-[193px] 2xl:!right-[114px] md:!right-[36px] sm:!left-auto !left-[82px] h-[43px] bg-gradient-to-r from-[#4e5f79] to-[#3e3e3e] hover:from-[#7b8799] duration-200 p-[14px] rounded-full !text-white"></div>
+          <div class="swiper-button-prev slider_left_arrow  lg:!top-[102px] md:!top-[93px] sm:!top-[168px] !top-[193px] 2xl:!right-[166px] md:!right-[88px] !left-auto  !h-[43px] bg-gradient-to-r from-[#4e5f79] to-[#3e3e3e] hover:from-[#7b8799] duration-200 p-[14px] rounded-full !text-white "></div>
     </div>
 
     <!-- progress bar -->
@@ -562,7 +535,7 @@
 
 
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".myslider", {
       spaceBetween: 30,
       autoplay: {
         delay: 2500,
@@ -579,6 +552,16 @@
       slidesPerView: 2,
       spaceBetween: 30,
       cssMode: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        375: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
